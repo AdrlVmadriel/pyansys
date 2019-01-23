@@ -639,7 +639,7 @@ class CyclicResult(Result):
                                                              screenshot=screenshot,
                                                              interactive=interactive,
                                                              **kwargs)
-
+        #
         # check inputs
         stress_types = ['S1', 'S2', 'S3', 'SINT', 'SEQV']
         if stype not in stress_types:
