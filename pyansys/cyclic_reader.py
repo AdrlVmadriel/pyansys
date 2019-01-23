@@ -632,7 +632,13 @@ class CyclicResult(Result):
         """
         stype = stype.upper()
         if not full_rotor:  # Plot sector
-            return super(CyclicResult, self).PlotPrincipalNodalStress(rnum, stype)
+            return super(CyclicResult, self).PlotPrincipalNodalStress(rnum, stype,
+                                                             colormap=colormap,
+                                                             flipscalars=flipscalars,
+                                                             cpos=cpos,
+                                                             screenshot=screenshot,
+                                                             interactive=interactive,
+                                                             **kwargs)
 
         # check inputs
         stress_types = ['S1', 'S2', 'S3', 'SINT', 'SEQV']
